@@ -1,5 +1,8 @@
+package main;
 import java.util.Locale;
 import java.util.Scanner;
+
+import models.Produto;
 
 public class exemplo4 {
     public static void main(String[] args){

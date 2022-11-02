@@ -1,21 +1,23 @@
-package ex04;
+package ex05;
 
 import java.util.Arrays;
 
-public class Seleção {
+public class Seleção2 {
     private String nome;
-    Figurinha3 jogador[] = new Figurinha3[11];
+    Figurinha4 jogador[] = new Figurinha4[11];
     private String tecnico;
     
 
-    public Seleção() {
+    public Seleção2() {
     }
 
 
-    public Seleção(String nome, Figurinha3[] jogador, String tecnico) {
+    public Seleção2(String nome,String tecnico) {
         this.nome = nome;
-        this.jogador = jogador;
         this.tecnico = tecnico;
+        for(int i =0;i<11;i++){
+            jogador[i] = new Figurinha4(nome);
+        }
     }
 
 
@@ -29,12 +31,12 @@ public class Seleção {
     }
 
 
-    public Figurinha3[] getJogador() {
+    public Figurinha4[] getJogador() {
         return jogador;
     }
 
 
-    public void setJogador(Figurinha3[] jogador) {
+    public void setJogador(Figurinha4[] jogador) {
         this.jogador = jogador;
     }
 
@@ -51,8 +53,11 @@ public class Seleção {
 
     @Override
     public String toString() {
-        return "Seleção [nome=" + nome + ", jogador=" + Arrays.toString(jogador) + ", tecnico=" + tecnico + "]+\n";
+        return "Seleção [nome=" + nome + ", jogador=" + Arrays.toString(jogador) + ", tecnico=" + tecnico + "]";
     }
+
+
+   
 
     
     

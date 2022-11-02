@@ -1,4 +1,4 @@
-package lab02;
+package ex04;
 
 import java.time.LocalDate;
 

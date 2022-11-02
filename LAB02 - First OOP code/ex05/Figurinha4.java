@@ -1,22 +1,22 @@
-package ex02;
+package ex05;
 
 import java.time.LocalDate;
 
-public class Figurinha2{
+public class Figurinha4{
     private String nome;
     private LocalDate nascimento;
     private float altura;
     private float peso;
     private String posicao;
     private String pais;
-    public Figurinha2() {
+    public Figurinha4() {
     }
-    public Figurinha2(String nome, LocalDate nascimento, float altura, float peso, String posicao, String pais) {
-        this.nome = nome;
-        this.nascimento = nascimento;
-        this.altura = altura;
-        this.peso = peso;
-        this.posicao = posicao;
+    public Figurinha4(String pais) {
+        this.nome = null;
+        this.nascimento = null;
+        this.altura = 0;
+        this.peso = 0;
+        this.posicao = null;
         this.pais = pais;
     }
     public String getNome() {
@@ -57,8 +57,8 @@ public class Figurinha2{
     }
     @Override
     public String toString() {
-        return "Jogador [nome=" + nome + ", nascimento=" + nascimento + ", altura=" + altura + ", peso=" + peso
-                + ", posicao=" + posicao + ", pais=" + pais + "]";
+        return "Figurinha [nome=" + nome + ", nascimento=" + nascimento + ", altura=" + altura + ", peso=" + peso
+                + ", posicao=" + posicao + ", pais=" + pais + "]+\n";
     }
 
     

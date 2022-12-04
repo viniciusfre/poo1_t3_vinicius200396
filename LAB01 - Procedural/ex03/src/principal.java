@@ -387,8 +387,11 @@ public class principal {
         char classe;
         int cra;
         System.out.println("<< Universidade X >>");
-        System.out.print("Quantos alunos serão cadastrados: ");
-        quant = sc.nextInt();
+        do{
+            System.out.print("Quantos alunos serão cadastrados: ");
+            quant = sc.nextInt();
+        }while(quant>10000);
+        
         Aluno aluno[] = new Aluno[quant];
         System.out.println();
         for(int i=0;i<quant;i++){
@@ -500,7 +503,7 @@ public class principal {
     }
 
     public static void main(String[] args) {
-        ex16();
+        ex14();
 
     }
 

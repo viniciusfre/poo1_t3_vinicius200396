@@ -12,7 +12,7 @@ public class Figurinha4{
     public Figurinha4() {
     }
     public Figurinha4(String pais) {
-        this.nome = null;
+        this.nome = "Jose";
         this.nascimento = null;
         this.altura = 0;
         this.peso = 0;
